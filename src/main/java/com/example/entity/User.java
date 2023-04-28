@@ -1,12 +1,9 @@
 package com.example.entity;
 
 import jakarta.validation.constraints.Email;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
+import lombok.*;
 import jakarta.persistence.*;
-import lombok.NoArgsConstructor;
-
+import java.util.HashSet;
 import java.util.Set;
 
 @Data
@@ -18,7 +15,6 @@ import java.util.Set;
         @UniqueConstraint(columnNames = {"email"})
 })
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -33,4 +29,10 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Set<Role> roles;
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "user_groups",
+            joinColumns = {@JoinColumn(name = "user_id")},
+            inverseJoinColumns = {@JoinColumn(name = "group_id")})
+    private Set<Group> groups = new HashSet<>();
 }
