@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Class contains methods for retrieving information about users from the Data Base
+ * Class is a service and contains the logic of interaction with the repository.
+ */
+
 @Service
 public class UserDetailsService implements org.springframework.security.core.userdetails.UserDetailsService {
     @Autowired

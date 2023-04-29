@@ -16,8 +16,11 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
-
 import java.util.Collections;
+
+/**
+ * Class controller for manage login/registration users
+ */
 
 @RestController
 @RequestMapping("/main-page/authorization")

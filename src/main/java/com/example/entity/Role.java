@@ -3,6 +3,10 @@ package com.example.entity;
 import lombok.*;
 import jakarta.persistence.*;
 
+/**
+ * Represents the "roles" table in the Data Base
+ */
+
 @Data
 @Entity
 @NoArgsConstructor

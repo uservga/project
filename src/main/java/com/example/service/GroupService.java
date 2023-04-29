@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class contains methods for retrieving information about groups from the Data Base
+ * Class is a service and contains the logic of interaction with the repository.
+ */
+
 @Service
 public class GroupService {
     @Autowired

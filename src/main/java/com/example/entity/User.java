@@ -6,6 +6,10 @@ import jakarta.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Represents the "userTest", "user_roles", "user_groups" table in the Data Base
+ */
+
 @Data
 @Entity
 @NoArgsConstructor
