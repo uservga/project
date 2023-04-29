@@ -13,6 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Optional;
 import java.util.Set;
 
+/**
+ * Class controller to get all the groups that one teacher has
+ */
+
 @RestController
 @RequestMapping("/user")
 public class UserController {

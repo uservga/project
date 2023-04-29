@@ -3,6 +3,10 @@ package com.example.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+/**
+ * Represents the "groups" table in the Data Base
+ */
+
 @Data
 @Entity
 @NoArgsConstructor

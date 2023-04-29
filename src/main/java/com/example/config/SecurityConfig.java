@@ -13,6 +13,13 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+/**
+ * Spring Security Configuration class for work with security in project
+ * Bean PasswordEncoder which used to encrypt users passwords(Uses the BCryptPasswordEncoder implementation)
+ * Bean AuthenticationManager used to authenticate users(AuthenticationConfiguration object is used to create it)
+ * Bean SecurityFilterChain used to configure authorization rules
+ */
+
 @Configuration
 @EnableMethodSecurity
 public class SecurityConfig{
